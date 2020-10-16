@@ -4,7 +4,7 @@ const schema = require('./schema');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-mongoose.connect('mongodb+srv://NAMAN:JKWwcrWrz2inwwY@cluster0.qhlay.mongodb.net/Graphqldb?retryWrites=true&w=majority',{ useNewUrlParser: true });
+mongoose.connect('mongodb+srv://<user_name>:<password>@cluster0.qhlay.mongodb.net/<db-name>?retryWrites=true&w=majority',{ useNewUrlParser: true });
 mongoose.connection.once('open',() => {
     console.log('Connected to the database');
 });
